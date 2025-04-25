@@ -8,12 +8,12 @@
 
 你可以通过以下链接快速跳转到不同领域的知识板块：
 
--   [📊 数据分析 (Data Analysis)](#数据分析data_analysis)
-_   [🛠️ 数据处理 (Data Processing)](#数据处理_data_processing)
-_   [🔩 机械学系 (Mechanical Engineering)](#机械学系_mechanical_engineering)
-_   [🧠 算法与数据结构 (Algorithms & Data Structures)](#算法与数据结构_algorithms__data_structures)
-_   [🔗 跨领域通用概念 (Cross_Cutting Concepts)](#跨领域通用概念_cross_cutting_concepts)
-___
+-   [📊 数据分析 (Data Analysis)](#-数据分析-data-analysis)
+-   [🛠️ 数据处理 (Data Processing)](#️-数据处理-data-processing)
+-   [🔩 机械学系 (Mechanical Engineering)](#-机械学系-mechanical-engineering)
+-   [🧠 算法与数据结构 (Algorithms & Data Structures)](#-算法与数据结构-algorithms--data-structures)
+-   [🔗 跨领域通用概念 (Cross_Cutting Concepts)](#-跨领域通用概念-cross_cutting-concepts)
+----
 
 ## 各领域概览
 
