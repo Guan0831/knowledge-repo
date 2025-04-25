@@ -24,9 +24,9 @@
 -   构建**预测模型**（包含传统机器学习和 **DeepML/深度学习** 实例）
 -   **评估**分析结果和进行**对比分析**
 -   有效地**沟通**数据发现和**故事化**技巧
--   [Kaggle 项目示例](<./Data_Analysis/Kaggle_Projects/README.md>)：端到端的数据分析/ML 项目实践
+-   [Kaggle 项目示例](<Data_Processing/Kaggle_Projects/README.md>)：端到端的数据分析/ML 项目实践
 
-👉 **[进入数据分析板块](<./Data_Analysis/README.md>)**
+👉 **[进入数据分析板块](<Data_Analysis/README.md>)**
 
 ### 🛠️ 数据处理 (Data Processing)
 -   各种数据的**采集与接入**方法
@@ -36,7 +36,7 @@
 -   **大数据处理**的基本概念
 -   保证**数据质量与治理**的原则
 
-👉 **[进入数据处理板块](<./Data_Processing/README.md>)**
+👉 **[进入数据处理板块](<Data_Processing/README.md>)**
 
 ### 🔩 机械学系 (Mechanical Engineering)
 _   **概念设计**与需求分析
@@ -48,21 +48,21 @@ _   **概念设计**与需求分析
 -   设备**运维、故障诊断与维护**
 -   技术**交流与文档**规范
 
-👉 **[进入机械学系板块](<./Mechanical_Engineering/README.md>)**
+👉 **[进入机械学系板块](<Mechanical_Engineering/README.md>)**
 
 ### 🧠 算法与数据结构 (Algorithms & Data Structures)
 -   核心**数据结构**的原理和实现
 -   常见**算法**的设计思路和应用
 -   **LeetCode 题目解答**：按不同类型或难度组织的解题代码和思路。
 
-👉 **[进入算法与数据结构板块](<./Algorithms/README.md>)**
+👉 **[进入算法与数据结构板块](<Data_Analysis/Common_Algorithms/README.md>)**
 
 ### 🔗 跨领域通用概念 (Cross_Cutting Concepts)
 -   通用的**问题解决思路**
 -   **项目管理**基础
 -   非常基础且通用的 **Python 语法和编程技巧**（更具体的代码示例请参考各领域）
 
-👉 **[进入跨领域通用概念板块](<./Cross_Cutting_Concepts/README.md>)**
+👉 **[进入跨领域通用概念板块](<Cross-Cutting-Concepts/README.md>)**
 
 ---
 
