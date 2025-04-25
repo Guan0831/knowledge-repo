@@ -1,95 +1,43 @@
-from Data_Analysis.Common_Algorithms.Basics import sorting_code
-import heapq
-
+from Data_Analysis.Common_Algorithms.Basics import searching_code
 if __name__ == "__main__":
-    test_cases = [
-        [64, 34, 25, 12, 22, 11, 90],
-        [5, 1, 4, 2, 8],
-        [1, 2, 3, 4, 5], # 已排序
-        [5, 4, 3, 2, 1], # 逆序
-        [1], # 单元素
-        [] # 空列表
-    ]
+    my_list = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91] # 二分搜索需要已排序列表
+    unsorted_list = [5, 2, 8, 1, 9, 4] # 线性搜索可以使用未排序列表
 
-    print("--- 冒泡排序 ---")
-    for arr in test_cases:
-        original = list(arr) # 复制列表，避免修改原列表影响下一次测试
-        print(f"原始列表: {original}")
-        sorted_arr = sorting_code.bubble_sort(arr)
-        print(f"排序结果: {sorted_arr}\n")
+    target1 = 23
+    target2 = 100
+    target3 = 1
 
-    print("--- 选择排序 ---")
-    # 重新加载测试用例，因为上面的排序会修改原列表
-    test_cases = [
-        [64, 34, 25, 12, 22, 11, 90],
-        [5, 1, 4, 2, 8],
-        [1, 2, 3, 4, 5],
-        [5, 4, 3, 2, 1],
-        [1],
-        []
-    ]
-    for arr in test_cases:
-        original = list(arr)
-        print(f"原始列表: {original}")
-        sorted_arr = sorting_code.selection_sort(arr)
-        print(f"排序结果: {sorted_arr}\n")
+    print("--- 线性搜索 ---")
+    print(f"在列表 {unsorted_list} 中搜索 {target1}:")
+    index1_linear = searching_code.linear_search(unsorted_list, target1)
+    print(f"找到索引: {index1_linear} (期望: -1)\n")
 
-    print("--- 插入排序 ---")
-    test_cases = [
-        [64, 34, 25, 12, 22, 11, 90],
-        [5, 1, 4, 2, 8],
-        [1, 2, 3, 4, 5],
-        [5, 4, 3, 2, 1],
-        [1],
-        []
-    ]
-    for arr in test_cases:
-        original = list(arr)
-        print(f"原始列表: {original}")
-        sorted_arr = sorting_code.insertion_sort(arr)
-        print(f"排序结果: {sorted_arr}\n")
+    print(f"在列表 {unsorted_list} 中搜索 {target3}:")
+    index3_linear = searching_code.linear_search(unsorted_list, target3)
+    print(f"找到索引: {index3_linear} (期望: 3)\n")
 
-    print("--- 归并排序 ---")
-    # 注意：归并排序返回新列表，不修改原列表，所以这里不需要复制
-    test_cases = [
-        [64, 34, 25, 12, 22, 11, 90],
-        [5, 1, 4, 2, 8],
-        [1, 2, 3, 4, 5],
-        [5, 4, 3, 2, 1],
-        [1],
-        []
-    ]
-    for arr in test_cases:
-        print(f"原始列表: {arr}")
-        sorted_arr = sorting_code.merge_sort(arr)
-        print(f"排序结果: {sorted_arr}\n")
 
-    print("--- 快速排序 ---")
-    test_cases = [
-        [64, 34, 25, 12, 22, 11, 90],
-        [5, 1, 4, 2, 8],
-        [1, 2, 3, 4, 5],
-        [5, 4, 3, 2, 1],
-        [1],
-        []
-    ]
-    for arr in test_cases:
-        original = list(arr)
-        print(f"原始列表: {original}")
-        sorted_arr = sorting_code.quick_sort(arr)
-        print(f"排序结果: {sorted_arr}\n")
+    print("--- 二分搜索 (迭代实现) ---")
+    print(f"在已排序列表 {my_list} 中搜索 {target1}:")
+    index1_binary_iter = searching_code.binary_search_iterative(my_list, target1)
+    print(f"找到索引: {index1_binary_iter} (期望: 5)\n")
 
-    print("--- 堆排序 ---")
-    test_cases = [
-        [64, 34, 25, 12, 22, 11, 90],
-        [5, 1, 4, 2, 8],
-        [1, 2, 3, 4, 5],
-        [5, 4, 3, 2, 1],
-        [1],
-        []
-    ]
-    for arr in test_cases:
-        original = list(arr)
-        print(f"原始列表: {original}")
-        sorted_arr = sorting_code.heap_sort(arr)
-        print(f"排序结果: {sorted_arr}\n")
+    print(f"在已排序列表 {my_list} 中搜索 {target2}:")
+    index2_binary_iter = searching_code.binary_search_iterative(my_list, target2)
+    print(f"找到索引: {index2_binary_iter} (期望: -1)\n")
+
+
+    print("--- 二分搜索 (递归实现) ---")
+    print(f"在已排序列表 {my_list} 中搜索 {target1}:")
+    index1_binary_rec = searching_code.binary_search_recursive_wrapper(my_list, target1)
+    print(f"找到索引: {index1_binary_rec} (期望: 5)\n")
+
+    print(f"在已排序列表 {my_list} 中搜索 {target2}:")
+    index2_binary_rec = searching_code.binary_search_recursive_wrapper(my_list, target2)
+    print(f"找到索引: {index2_binary_rec} (期望: -1)\n")
+
+    # 注意：对未排序列表使用二分搜索会得到错误结果！
+    print("--- 注意：对未排序列表使用二分搜索会出错！ ---")
+    print(f"在未排序列表 {unsorted_list} 中搜索 {target3} (错误示例):")
+    index_error_example = searching_code.binary_search_iterative(unsorted_list, target3)
+    print(f"找到索引 (可能错误): {index_error_example}\n")
