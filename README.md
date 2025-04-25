@@ -1,6 +1,5 @@
 # 📚 库
 
-*（20250425 V1.0）目前这里是体系1.0版本，虽然说明绝大多数交给了万能的AI,还是想啰嗦几句，我要真的搞完这个东西，怕不是都2030了，这也太多了吧（。。。）以及虽然存在目录但是目录里面的东西会随即调整，更新了的话当然也会更新这里。❤️❤️❤️
 
 ✨ 这里汇集了我在 **数据分析、数据处理、机械学系** 以及 **算法** 等领域的学习笔记、代码示例和项目实践。
 
@@ -10,10 +9,10 @@
 你可以通过以下链接快速跳转到不同领域的知识板块：
 
 -   [📊 数据分析 (Data Analysis)](#数据分析-data-analysis)
--   🛠️ 数据处理 (Data Processing)](#数据处理-data-processing)
--   🔩 机械学系 (Mechanical Engineering)](#机械学系-mechanical-engineering)
--   🧠 算法与数据结构 (Algorithms & Data Structures)](#算法与数据结构-algorithms--data-structures)
--   🔗 跨领域通用概念 (Cross-Cutting Concepts)](#跨领域通用概念-cross-cutting-concepts)
+-   [🛠️ 数据处理 (Data Processing)](#数据处理-data-processing)
+-   [🔩 机械学系 (Mechanical Engineering)](#机械学系-mechanical-engineering)
+-   [🧠 算法与数据结构 (Algorithms & Data Structures)](#算法与数据结构-algorithms--data-structures)
+-   [🔗 跨领域通用概念 (Cross-Cutting Concepts)](#跨领域通用概念-cross-cutting-concepts)
 ---
 
 ## 各领域概览
@@ -66,3 +65,5 @@
 👉 **[进入跨领域通用概念板块](<./Cross-Cutting-Concepts/README.md>)**
 
 ---
+
+*（20250425 V1.0）目前这里是体系1.0版本，虽然说明绝大多数交给了万能的AI,还是想啰嗦几句，我要真的搞完这个东西，怕不是都2030了，这也太多了吧（。。。）以及虽然存在目录但是目录里面的东西会随即调整，更新了的话当然也会更新这里。❤️❤️❤️
