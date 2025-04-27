@@ -24,7 +24,7 @@
 -   **搜索算法 (Searching):** 线性搜索、二分搜索等基本搜索方法。
 -   **递归与回溯 (Recursion & Backtracking):** 理解递归思想，以及如何运用回溯解决组合、排列等问题。
 
-👉 **[了解更多基础算法](<./01-Basics/README.md>)**
+👉 **[了解更多基础算法](<./Basics/README.md>)**
 
 ### LeetCode 常用模式 (LeetCode Patterns)
 
@@ -41,7 +41,7 @@
 
 ✨ 这里侧重讲解这些**模式和算法本身的原理和通用实现**。你可以通过这些知识去解决 [LeetCode 题目解答](../LeetCode-Solutions/) 中的具体问题。
 
-👉 **[探索 LeetCode 常用模式](<./02-LeetCode-Patterns/README.md>)**
+👉 **[探索 LeetCode 常用模式](<./LeetCode_Patterns/README.md>)**
 
 ### 会了更好的进阶算法 (Beyond Basics)
 
