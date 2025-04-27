@@ -1,43 +1,30 @@
-from Data_Analysis.Common_Algorithms.Basics import searching_code
+from Data_Analysis.Common_Algorithms.Basics import recursion_backtracking_examples
 if __name__ == "__main__":
-    my_list = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91] # 二分搜索需要已排序列表
-    unsorted_list = [5, 2, 8, 1, 9, 4] # 线性搜索可以使用未排序列表
+    print("--- 递归示例 ---")
+    num_factorial = 5
+    print(f"{num_factorial}! = {recursion_backtracking_examples.factorial_recursive(num_factorial)}") # 期望: 120
 
-    target1 = 23
-    target2 = 100
-    target3 = 1
+    num_fib = 10
+    print(f"斐波那契数列第 {num_fib} 项 (递归): {recursion_backtracking_examples.fibonacci_recursive(num_fib)}") # 期望: 55
+    # 注意：fibonacci_recursive(40) 以上可能会非常慢！
 
-    print("--- 线性搜索 ---")
-    print(f"在列表 {unsorted_list} 中搜索 {target1}:")
-    index1_linear = searching_code.linear_search(unsorted_list, target1)
-    print(f"找到索引: {index1_linear} (期望: -1)\n")
+    print("\n--- 回溯示例 ---")
+    test_items_perm = [1, 2, 3]
+    print(f"列表 {test_items_perm} 的全排列:")
+    all_permutations = recursion_backtracking_examples.permutations(test_items_perm)
+    print(all_permutations)
+    # 期望: [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]] (顺序可能不同)
 
-    print(f"在列表 {unsorted_list} 中搜索 {target3}:")
-    index3_linear = searching_code.linear_search(unsorted_list, target3)
-    print(f"找到索引: {index3_linear} (期望: 3)\n")
+    test_items_comb = [1, 2, 3, 4]
+    comb_size = 2
+    print(f"\n从列表 {test_items_comb} 中选择 {comb_size} 个元素的组合:")
+    all_combinations = recursion_backtracking_examples.combinations(test_items_comb, comb_size)
+    print(all_combinations)
+    # 期望: [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]] (顺序可能不同)
 
-
-    print("--- 二分搜索 (迭代实现) ---")
-    print(f"在已排序列表 {my_list} 中搜索 {target1}:")
-    index1_binary_iter = searching_code.binary_search_iterative(my_list, target1)
-    print(f"找到索引: {index1_binary_iter} (期望: 5)\n")
-
-    print(f"在已排序列表 {my_list} 中搜索 {target2}:")
-    index2_binary_iter = searching_code.binary_search_iterative(my_list, target2)
-    print(f"找到索引: {index2_binary_iter} (期望: -1)\n")
-
-
-    print("--- 二分搜索 (递归实现) ---")
-    print(f"在已排序列表 {my_list} 中搜索 {target1}:")
-    index1_binary_rec = searching_code.binary_search_recursive_wrapper(my_list, target1)
-    print(f"找到索引: {index1_binary_rec} (期望: 5)\n")
-
-    print(f"在已排序列表 {my_list} 中搜索 {target2}:")
-    index2_binary_rec = searching_code.binary_search_recursive_wrapper(my_list, target2)
-    print(f"找到索引: {index2_binary_rec} (期望: -1)\n")
-
-    # 注意：对未排序列表使用二分搜索会得到错误结果！
-    print("--- 注意：对未排序列表使用二分搜索会出错！ ---")
-    print(f"在未排序列表 {unsorted_list} 中搜索 {target3} (错误示例):")
-    index_error_example = searching_code.binary_search_iterative(unsorted_list, target3)
-    print(f"找到索引 (可能错误): {index_error_example}\n")
+    test_items_comb_2 = ["a", "b", "c"]
+    comb_size_2 = 3
+    print(f"\n从列表 {test_items_comb_2} 中选择 {comb_size_2} 个元素的组合:")
+    all_combinations_2 = recursion_backtracking_examples.combinations(test_items_comb_2, comb_size_2)
+    print(all_combinations_2)
+    # 期望: [['a', 'b', 'c']]
