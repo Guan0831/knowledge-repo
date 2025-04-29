@@ -40,7 +40,7 @@
 -   常见**算法**的设计思路和应用
 -   **LeetCode 题目解答**：按不同类型或难度组织的解题代码和思路。
 
-👉 **[进入算法与数据结构板块](<Data_Analysis/Common_Algorithms/README.md>)**
+👉 **[进入算法与数据结构板块](<Algorithms/README.md>)**
 
 ### 🔗 跨领域通用概念 (Cross_Cutting Concepts)
 -   通用的**问题解决思路**
